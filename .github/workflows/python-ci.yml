@@ -27,7 +27,7 @@ jobs:
         run: flake8 .
 
       - name: Run security scan with Safety
-        run: safety scan -r requirements.txt
+        run: safety check -r requirements.txt
 
       - name: Run security scan with Bandit
         run: bandit -r .
